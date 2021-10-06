@@ -120,7 +120,7 @@ include 'nav.php';
         </div>
       </div>
 
-      <div class="ourpurpose col-md-6 col-sm-12 ">
+      <div class="ourpurpose col-md-6 col-sm-12 " style="margin-top: 50px;">
         <img class="img-fluid" src="images/leaqder.jpeg" alt="">
       </div>
     </div>
