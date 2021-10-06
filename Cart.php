@@ -56,7 +56,7 @@ if(isset($_POST['enter']))
                                 </p>
                                                          
                                 
-                                <button type="submit" class="btn btn-primary btn-md" name="enter" style="width: 100%;">Details</button>
+                                <button type="submit" class=" btnn2" name="enter" >Details</button>
                                 <input type="hidden" name="_id" value="<?php echo $products['id']; ?>">
                                 <input type="hidden" name="_tbl" value="<?php echo $products['tbl']; ?>">
                             </div>

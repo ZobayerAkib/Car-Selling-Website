@@ -12,4 +12,22 @@
 .card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+.btnn2 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .6rem 3rem;
+    background: linear-gradient(45deg, #1abc9c, #149279);
+    color: #130f40;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: .5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btnn2:hover {
+    background: #1e5f52;
+    color: rgb(250, 243, 243);
+}
 
