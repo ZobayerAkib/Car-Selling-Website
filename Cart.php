@@ -43,11 +43,11 @@ if(isset($_POST['enter']))
             while ($products = mysqli_fetch_array($queryfire)) {
               
         ?>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5" style="margin:auto;">
 
                     <form action="" method="POST">
 
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem;margin:auto;">
                             <img src="<?php echo $products['img']; ?>" class="card-img-top" alt="..." height="200px">
                             <div class="card-body mt-5">
                                 <h5 class="card-title"><?php echo $products['name']; ?></h5>
