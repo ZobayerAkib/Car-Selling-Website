@@ -1,0 +1,4 @@
+.btn:hover{
+    transform: translateY(-5px);
+    background: rgba(0, 0, 255, 0.836);
+}
