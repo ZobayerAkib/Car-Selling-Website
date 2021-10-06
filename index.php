@@ -149,7 +149,7 @@ if(isset($_POST['enter']))
 
             <form action="" method="POST">
 
-              <div class="card " style="width:325px;">
+              <div class="card " style="width:325px;margin:auto">
                 <img src="<?php echo $products['img']; ?>" class="card-img-top" alt="..." height="200px">
                 <div class="card-body mt-5">
                   <h5 class="card-title"><?php echo $products['name']; ?></h5>
