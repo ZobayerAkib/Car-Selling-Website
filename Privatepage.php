@@ -61,7 +61,7 @@ if (isset($_POST['enter'])) {
                                     </p>
                                     <p class="card-text" style="font-weight: bold;">New Price : <span style="color: red;">&#2547; <?php echo $np; ?></span> </p>
                                     </p>
-                                    <button type="submit" class="btnn2 name=" enter" style="width: 100%;">Details</button>
+                                    <button type="submit" class="btnn2" name="enter" style="width: 100%;">Details</button>
                                     <input type="hidden" name="_id" value="<?php echo $products['id']; ?>">
                                     <input type="hidden" name="_tbl" value="<?php echo $products['tbl']; ?>">
                                     <input type="hidden" name="_dis" value="<?php echo $np; ?>">
