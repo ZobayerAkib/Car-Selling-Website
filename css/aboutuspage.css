@@ -8,72 +8,54 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .home {
-    
     text-align: center;
     overflow-x: hidden;
 }
 
-
-
-
-.carousel-inner
-{
-    height: 500px;
-
+.home img {
+    width: 100%;
+    height: 80%;
 }
 
-
-
-
-h5{
+h5 {
     color: gray;
 }
 
-.ourpurpose
-{
+.ourpurpose {
     margin: 80px auto;
     width: 50%;
     padding: 8px;
-    
 }
-.ourpurpose img
-{   
+
+.ourpurpose img {
     float: right;
     width: 450px;
     height: 400px;
     padding: 0 20px 0 0;
     border: solid white;
     border-radius: 10px;
-
 }
-.title
 
-{
-    font-family:arial,helvetica,sans-serif;
+.title {
+    font-family: arial, helvetica, sans-serif;
     font-size: 3.4rem;
     line-height: 4.4rem;
     letter-spacing: .4rem;
     font-weight: 400;
     margin-bottom: .8rem;
 }
-.text
-{
-    
+
+.text {
     text-align: justify;
-    font-family: arial,helvetica,sans-serif;
+    font-family: arial, helvetica, sans-serif;
     font-size: 20px;
     line-height: 2.6rem;
     letter-spacing: .1rem;
     font-weight: 400;
 }
-.container
-{
+
+.container {
     max-width: 100%;
 }
-
-
-
-
-
- 

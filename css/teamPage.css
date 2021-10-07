@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 .card h5 {
     font-weight: bolder;
     text-align: center;
@@ -13,7 +12,6 @@
     color: gray;
     text-align: center;
     font-family: arial, helvetica, sans-serif;
-   
 }
 
 #cards {

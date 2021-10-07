@@ -9,7 +9,6 @@
     text-transform: capitalize;
 }
 
-
 .btnn {
     display: inline-block;
     margin-top: 1rem;
@@ -30,7 +29,6 @@
 }
 
 .home {
-   
     text-align: center;
     overflow-x: hidden;
 }
@@ -44,7 +42,7 @@
 .home img {
     width: 100%;
     margin: 1rem 0;
-    height: 50%;
+    height: 80%
 }
 
 .card {
@@ -112,8 +110,6 @@
     text-transform: uppercase;
 }
 
-
-
 ::after {
     margin: 0 0 10px 15px;
 }
@@ -177,4 +173,3 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
-

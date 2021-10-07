@@ -8,8 +8,7 @@ $count = $result0->num_rows;
 $id = 1;
 $titleQ = mysqli_query($conn, "select *from nav where id=1");
 $title = mysqli_fetch_array($titleQ);
-if(isset($_POST['nav_submit']))
-{
+if (isset($_POST['nav_submit'])) {
   $_SESSION['_search'] = $_POST['search'];
   header("Location:search.php");
 }
@@ -31,8 +30,9 @@ if(isset($_POST['nav_submit']))
 </head>
 
 <body>
+  <!-- Nav-ber Section -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <h1><a class="navbar-brand brndName"   href="index.php"><?php echo $title['db'] ?></a></h1>
+    <h1><a class="navbar-brand brndName" href="index.php"><?php echo $title['db'] ?></a></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

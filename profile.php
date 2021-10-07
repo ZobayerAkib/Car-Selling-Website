@@ -62,6 +62,7 @@ if (isset($_POST['logout'])) {
     <link rel="stylesheet" type="text/css" href="css/reg.css">
     <title>User Profile</title>
 </head>
+<!-- User Profile Section -->
 
 <body style="background-image: url(images/bg1.jpg);">
     <form action="" method="POST">
@@ -72,42 +73,43 @@ if (isset($_POST['logout'])) {
     </form>
 
     <div class="container" style="width: 450px;text-align: center;margin-top:95px;margin-bottom:95px;height:570px;background-color:white;box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);border-radius:5px;">
-    <div class="card">   
-    <form action="" method="POST" class="">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;margin-top:20px;margin-bottom:55px;">User Profile</p>
-            <div class="input-group" style="margin-bottom: 30px;">
-                <label style="margin-right: 76px;margin-left:20px;font-size:20px;font-weight:bold;">Username*</label>
-                <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="text" placeholder="Username" name="username" value="<?php echo $uname ?>" required>
-            </div>
-            <div class="input-group" style="margin-bottom: 30px;">
-                <label style="margin-right: 119px;margin-left:20px;font-size:20px;font-weight:bold;">Email*</label>
-                <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="email" placeholder="Email" name="email" value="<?php echo $eml ?>" required>
-            </div>
-            <div class="input-group" style="margin-bottom: 30px;">
-                <label style="margin-right: 110px;margin-left:20px;font-size:20px;font-weight:bold;">Phone*</label>
-                <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="text" placeholder="Phone" name="phone" value="<?php echo $phn ?>" required>
-            </div>
-            <div class="input-group" style="margin-bottom: 30px;">
-                <label style="margin-right: 5px;margin-left:20px;font-size:20px;font-weight:bold;">Current Password*</label>
-                <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="Password" name="cpassword" value="" required>
-            </div>
-            <div class="input-group" style="margin-bottom: 30px;">
-                <label style="margin-right: 40px;margin-left:20px;font-size:20px;font-weight:bold;">New Password</label>
-                <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="New Password" name="npassword" value="">
-            </div>
-            <div class="input-group d-flex justify-content-center" style="margin-top: 55px;">
-                <button name="edit" class="btn btn-success btn-lg btn-block">Edit</button>
-            </div>
+        <!-- User Profile Card Section -->
+        <div class="card">
+            <form action="" method="POST" class="">
+                <p class="login-text" style="font-size: 2rem; font-weight: 800;margin-top:20px;margin-bottom:55px;">User Profile </p>
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label style="margin-right: 76px;margin-left:20px;font-size:20px;font-weight:bold;">Username<b style="color: red;">*</b></label>
+                    <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="text" placeholder="Username" name="username" value="<?php echo $uname ?>" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label style="margin-right: 119px;margin-left:20px;font-size:20px;font-weight:bold;">Email<b style="color: red;">*</b></label>
+                    <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="email" placeholder="Email" name="email" value="<?php echo $eml ?>" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label style="margin-right: 110px;margin-left:20px;font-size:20px;font-weight:bold;">Phone<b style="color: red;">*</b></label>
+                    <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="text" placeholder="Phone" name="phone" value="<?php echo $phn ?>" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label style="margin-right: 5px;margin-left:20px;font-size:20px;font-weight:bold;">Current Password<b style="color: red;">*</b></label>
+                    <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="Password" name="cpassword" value="" required>
+                </div>
+                <div class="input-group" style="margin-bottom: 30px;">
+                    <label style="margin-right: 40px;margin-left:20px;font-size:20px;font-weight:bold;">New Password</label>
+                    <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="New Password" name="npassword" value="">
+                </div>
+                <div class="input-group d-flex justify-content-center" style="margin-top: 55px;">
+                    <button name="edit" class="btn btn-success btn-lg btn-block">Edit</button>
+                </div>
 
-        </form>
-    </div>
+            </form>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
+<!-- Footer Section -->
 <?php
 include 'footer.php';
 ?>

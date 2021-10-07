@@ -15,50 +15,48 @@ if ($_SESSION['t_id'] == 'normal') {
         if (!isset($_SESSION['user_id'])) {
             echo "<script>alert('Please login first');location.href='login.php';</script";
         } else {
-    
+
             $uId = $_SESSION['user_id'];
             $uEmail = $_SESSION['user_email'];
             $uPhone = $_SESSION['user_phone'];
             $carName = $row['name'];
-            
+
             $carPrice = $row['price'];
-            
-            
+
+
             $sqlInsert = "insert into order_cars (user_id,email,phone,car_id,car_name,car_price) values('$uId','$uEmail',' $uPhone','$id','$carName','$carPrice')";
             $resultIns = mysqli_query($conn, $sqlInsert);
             if ($resultIns) {
-                echo "<script>alert('s');location.href='productDetails.php';</script";
+                echo "<script>alert('your data has been stored. We will contact with you soon. Thanks for being with us.');location.href='productDetails.php';</script";
             } else {
                 echo "<script>alert('Something went wrong!')</script>";
             }
         }
     }
-
-    
 }
 if ($_SESSION['t_id'] == 'private') {
     $sql = "select *from products2 where id='$id'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
     $uPrice = $_SESSION['updated_price'];
-    
+
     if (isset($_POST['submit_car'])) {
         if (!isset($_SESSION['user_id'])) {
             echo "<script>alert('Please login first');location.href='login.php';</script";
         } else {
-    
+
             $uId = $_SESSION['user_id'];
             $uEmail = $_SESSION['user_email'];
             $uPhone = $_SESSION['user_phone'];
             $carName = $row['name'];
-            
+
             $carPrice = $_SESSION['updated_price'];
-            
-            
+
+
             $sqlInsert = "insert into order_cars (user_id,email,phone,car_id,car_name,car_price) values('$uId','$uEmail',' $uPhone','$id','$carName','$carPrice')";
             $resultIns = mysqli_query($conn, $sqlInsert);
             if ($resultIns) {
-                echo "<script>alert('s');location.href='productDetails.php';</script";
+                echo "<script>alert('Your data has been stored. We will contact with you soon. Thanks for being with us.');location.href='productDetails.php';</script";
             } else {
                 echo "<script>alert('Something went wrong!')</script>";
             }
@@ -88,7 +86,7 @@ if ($_SESSION['t_id'] == 'private') {
 </head>
 
 <body>
-
+    <!--Product Details Section -->
     <div class="container" style="margin-top: 80px;margin-bottom:80px;box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);border-radius:5px;">
         <div class="card mb-3">
             <div class="row no-gutters">
@@ -117,23 +115,23 @@ if ($_SESSION['t_id'] == 'private') {
                                 <p class="card-text" style="font-size:20px;font-weight:bolder;margin-right:60px;">Price:</p>
 
                                 <?php
-                                    if($tbl == 'normal')
-                                    {
+                                if ($tbl == 'normal') {
 
-                                    ?>
-                                        <p class="card-text" style="font-size:20px;font-weight: bold;color:red;"><?php echo $row['price'] ?> tk</p>
-                                    <?php
-
-                                    }if($tbl == 'private'){
-
-                                        ?>
-                                           <p class="card-text" style="font-size:20px;margin-right:10px;font-weight: bold;text-decoration: line-through;"><?php echo $row['price'] ?> tk</p>
-                                           <p class="card-text" style="font-size:20px;font-weight: bold;color:red;"><?php echo $uPrice ?> tk</p> 
-                                        <?php
-
-                                    }
                                 ?>
-                                
+                                    <p class="card-text" style="font-size:20px;font-weight: bold;color:red;"><?php echo $row['price'] ?> tk</p>
+                                <?php
+
+                                }
+                                if ($tbl == 'private') {
+
+                                ?>
+                                    <p class="card-text" style="font-size:20px;margin-right:10px;font-weight: bold;text-decoration: line-through;"><?php echo $row['price'] ?> tk</p>
+                                    <p class="card-text" style="font-size:20px;font-weight: bold;color:red;"><?php echo $uPrice ?> tk</p>
+                                <?php
+
+                                }
+                                ?>
+
                             </li>
                         </ul>
 
@@ -141,7 +139,7 @@ if ($_SESSION['t_id'] == 'private') {
 
                         <form action="" method="POST" class="">
                             <div class="input-group d-flex justify-content-center" style="margin-top: 30px;">
-                                <button name="submit_car" class="btn btn-primary btn-lg" style="width: 390px;">Buy Now</button>
+                                <button name="submit_car" class="btn btn-success btn-lg" style="width: 390px;">Buy Now</button>
                             </div>
                         </form>
                     </div>
@@ -210,7 +208,7 @@ if ($_SESSION['t_id'] == 'private') {
 </body>
 
 </html>
-
+<!-- Footer Section -->
 <?php
 include 'footer.php';
 ?>

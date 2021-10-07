@@ -1,12 +1,21 @@
 <?php
 include 'nav.php';
 
-if(isset($_POST['enter']))
-{
-   $_SESSION['p_id'] = $_POST['_id']; 
-   $_SESSION['t_id'] = $_POST['_tbl']; 
-   header("Location:productDetails.php");
+if (isset($_POST['enter'])) {
+  $_SESSION['p_id'] = $_POST['_id'];
+  $_SESSION['t_id'] = $_POST['_tbl'];
+  header("Location:productDetails.php");
 }
+include "connect.php";
+$sql1 = "select *from banner where id='1'";
+$result1 = mysqli_query($conn, $sql1);
+$row1 = mysqli_fetch_array($result1);
+$sql2 = "select *from banner where id='2'";
+$result2 = mysqli_query($conn, $sql2);
+$row2 = mysqli_fetch_array($result2);
+$sql3 = "select *from banner where id='3'";
+$result3 = mysqli_query($conn, $sql3);
+$row3 = mysqli_fetch_array($result3);
 
 
 ?>
@@ -21,7 +30,7 @@ if(isset($_POST['enter']))
   <link rel="stylesheet" href="css/Homepage.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Document</title>
+  <title>Homepage</title>
 </head>
 
 <body>
@@ -36,24 +45,24 @@ if(isset($_POST['enter']))
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img style="width:100%" src="Images/one.jpg" class="h-80  w-100  img-fluid" alt="...">
+          <img src="<?php echo $row1['img']; ?>" class="w-100 img-fluid" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
+            <h5 style="color:#149279; font-size:30px;"><?php echo $row1['Title']; ?></h5>
+            <p style="color: white;"><?php echo $row1['discription']; ?></p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="Images/three.jpg" class=" w-100 h-80 img-fluid" alt="...">
+          <img src="<?php echo $row2['img']; ?>" class=" w-100 img-fluid" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
+            <h5 style="color:#149279; font-size:30px;"><?php echo $row2['Title']; ?></h5>
+            <p style="color: white;"><?php echo $row2['discription']; ?></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Images/two.jpg" class="h-80  w-100  img-fluid" alt="...">
+          <img src="<?php echo $row3['img']; ?>" class="h-80 img-fluid" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
+            <h5 style="color:#149279; font-size:30px;"><?php echo $row3['Title']; ?></h5>
+            <p style="color: white;"><?php echo $row3['discription']; ?></p>
           </div>
         </div>
       </div>
@@ -154,7 +163,7 @@ if(isset($_POST['enter']))
                 <div class="card-body mt-5">
                   <h5 class="card-title"><?php echo $products['name']; ?></h5>
                   <p class="card-text" style="font-weight: bold;">Price : &#2547; <?php echo $products['price']; ?>
-                    
+
                   </p>
                   <button type="submit" class="btnn2" name="enter">Details</button>
                   <input type="hidden" name="_id" value="<?php echo $products['id']; ?>">
@@ -177,7 +186,7 @@ if(isset($_POST['enter']))
     </div>
 
     <div class="container mt-5" style="padding-top: 10px;">
-      <a style="padding-top: 10px;margin-bottom:50px"  href="Cart.php" class="btnn3">See All Vehicles</a>
+      <a style="padding-top: 10px;margin-bottom:50px" href="Cart.php" class="btnn3">See All Vehicles</a>
     </div>
   </section>
 
@@ -229,6 +238,7 @@ if(isset($_POST['enter']))
       </div>
     </div>
   </section>
+  <!---Footer Section ----->
   <footer class="mt-5">
     <?php
 

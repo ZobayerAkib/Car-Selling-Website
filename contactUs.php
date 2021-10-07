@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/contactStyle.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
@@ -36,6 +36,7 @@ if (isset($_POST['submit'])) {
 
         </div>
         <div class="container">
+            <!--Contact Info Section -->
             <div class="contactinfo">
                 <div class="box">
                     <div class="icon">
@@ -83,7 +84,7 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
             </div>
-
+            <!--Contact Form Section -->
             <div class="contactform">
 
                 <form action="" method="post" autocomplete="off">
@@ -114,17 +115,17 @@ if (isset($_POST['submit'])) {
 
     </section>
     <section>
-        
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5386203568683!2d90.40448511429722!3d23.763826894181662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77decb5f845%3A0xc2eadd2f3b867792!2sAhsanullah%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbd!4v1633416800163!5m2!1sen!2sbd" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5386203568683!2d90.40448511429722!3d23.763826894181662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77decb5f845%3A0xc2eadd2f3b867792!2sAhsanullah%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbd!4v1633416800163!5m2!1sen!2sbd" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
+    <!--Footer Section -->
+    <footer>
+        <?php
 
-    <footer >
-    <?php
+        include 'footer.php';
 
-    include 'footer.php';
-
-    ?>
-  </footer>
+        ?>
+    </footer>
 
 
 

@@ -12,12 +12,11 @@ if (isset($_SESSION['user_id'])) {
     $count = $count + $count1;
 }
 
-if(isset($_POST['enter_search']))
-{
-   $_SESSION['p_id'] = $_POST['_id']; 
-   $_SESSION['t_id'] = $_POST['_tbl']; 
-   $_SESSION['updated_price'] = $_POST['_dis']; 
-   header("Location:productDetails.php");
+if (isset($_POST['enter_search'])) {
+    $_SESSION['p_id'] = $_POST['_id'];
+    $_SESSION['t_id'] = $_POST['_tbl'];
+    $_SESSION['updated_price'] = $_POST['_dis'];
+    header("Location:productDetails.php");
 }
 
 $n = 1;
@@ -38,11 +37,12 @@ $n = 1;
 </head>
 
 <body>
+    <!-- Search Section -->
     <section class="container">
         <p class="mt-5" style="font-size: 20px;font-weight:bold;text-align: center;color:red;">There is <?php echo $count ?> results of your search</p>
 
         <div style="margin-top:100px ;" class="row">
-
+            <!-- Search for all model car section -->
 
             <?php
             $sql = "select *from products where name like '%$text%'";
@@ -88,7 +88,7 @@ $n = 1;
 
 
 
-
+            <!-- Search for Special offers car section -->
             <?php
             if (isset($_SESSION['user_id'])) {
 
@@ -113,7 +113,7 @@ $n = 1;
                                     <p class="card-text" style="font-weight: bold;">Price :<span style="font-weight: bold; text-decoration: line-through;color:red">&#2547; <?php echo $row['price']; ?></span>
                                         <span>(<?php echo $row['discount']; ?>% off)</span>
                                     </p>
-                                    <p class="card-text" style="font-weight: bold;">New Price : <span >&#2547; <?php echo $np; ?></span> </p>
+                                    <p class="card-text" style="font-weight: bold;">New Price : <span>&#2547; <?php echo $np; ?></span> </p>
                                     </p>
                                     <button type="submit" class="btnn2" name="enter_search" style="width: 100%;">Details</button>
                                     <input type="hidden" name="_id" value="<?php echo $row['id']; ?>">
@@ -139,7 +139,7 @@ $n = 1;
 
         </div>
 
-        </section>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 

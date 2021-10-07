@@ -1,5 +1,10 @@
 <?php
 include 'nav.php';
+
+include "connect.php";
+$sql = "SELECT `img` FROM `banner` where id=5  ";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -12,21 +17,20 @@ include 'nav.php';
   <title>About Us</title>
 
   <link rel="stylesheet" href="css/aboutuspage.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
 
-
+  <!--Banner Section -->
   <section class="home">
-        <img src="images/31.jpg" class="img-fluid" alt="...">
+    <img src="<?php echo $row['img']; ?>" class="img-fluid" alt="...">
 
   </section>
 
-
+  <!--About Us Section -->
   <section class="container">
-    <div class="about-us mt-5">
+    <div class="about-us">
       <h1 class="title">About Us</h1>
     </div>
     <div class="row">
@@ -40,8 +44,8 @@ include 'nav.php';
     </div>
 
   </section>
-  
 
+  <!--Our Purpose Section -->
   <section class="ourpurpose container">
     <div class="row g-0">
       <div class="ourpurpose col-md-5 col-sm-12 ">
@@ -65,18 +69,18 @@ include 'nav.php';
     </div>
 
   </section>
-
+  <!--Our Leadership Section -->
   <section class="container">
     <div class="row g-0">
 
       <div class=" col-md-6 col-sm-12 ">
-        <div style="margin-top: 50px;" >
+        <div style="margin-top: 50px;">
 
           <div class="title" style="color: gray;">
             <h1>OUR LEADERSHIP</h1>
           </div>
 
-          <div class="text"  >
+          <div class="text">
             <h5>With the people of Ford around the world, our leadership is committed to serving all of our stakeholder
               groups. Like generations of leaders before them, they understand that by helping to create a world with
               fewer obstacles and limits, we help people to move forward and upward. </h5>
@@ -92,7 +96,7 @@ include 'nav.php';
   </section>
 
 
-
+  <!--Our Culture Section -->
   <section class="ourpurpose container">
     <div class="row g-0">
       <div class="ourpurpose col-md-5 col-sm-12">
@@ -101,7 +105,7 @@ include 'nav.php';
 
 
       <div class="col-md-7 col-sm-12 ">
-        <div style="margin-top: 50px;"  >
+        <div style="margin-top: 50px;">
 
           <div class="title" style="color: gray;">
             <h1>OUR CULTURE</h1>
@@ -125,7 +129,7 @@ include 'nav.php';
   <div>
 
   </div>
-
+  <!--Footer Section-->
   <footer>
     <?php
 
@@ -134,9 +138,7 @@ include 'nav.php';
     ?>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

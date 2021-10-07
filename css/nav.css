@@ -1,82 +1,95 @@
-.mleft{
+.mleft {
     margin-left: 750px;
 }
-.brndName{
+
+.brndName {
     margin-right: 50px;
 }
-.nItem{
+
+.nItem {
     margin-right: 20px;
 }
+
 @media screen and (max-width:1871px) {
-    .mleft{
+    .mleft {
         margin-left: 650px;
     }
- }
- @media screen and (max-width:1771px) {
-    .mleft{
+}
+
+@media screen and (max-width:1771px) {
+    .mleft {
         margin-left: 550px;
     }
- }
- @media screen and (max-width:1671px) {
-    .mleft{
+}
+
+@media screen and (max-width:1671px) {
+    .mleft {
         margin-left: 450px;
     }
- }
- @media screen and (max-width:1571px) {
-    .mleft{
+}
+
+@media screen and (max-width:1571px) {
+    .mleft {
         margin-left: 350px;
     }
- }
+}
+
 @media screen and (max-width:1471px) {
-    .mleft{
+    .mleft {
         margin-left: 280px;
     }
- }
- @media screen and (max-width:1381px) {
-    .mleft{
+}
+
+@media screen and (max-width:1381px) {
+    .mleft {
         margin-left: 200px;
     }
- }
- @media screen and (max-width:1322px) {
-    .mleft{
+}
+
+@media screen and (max-width:1322px) {
+    .mleft {
         margin-left: 150px;
     }
- }
- @media screen and (max-width:1271px) {
-    .mleft{
+}
+
+@media screen and (max-width:1271px) {
+    .mleft {
         margin-left: 100px;
     }
- }
+}
+
 @media screen and (max-width:1223px) {
-    .mleft{
+    .mleft {
         margin-left: 30px;
     }
- }
- @media screen and (max-width:1153px) {
-    .mleft{
+}
+
+@media screen and (max-width:1153px) {
+    .mleft {
         margin-left: 0px;
     }
- }
- @media screen and (max-width:1123px) {
-    .mleft{
+}
+
+@media screen and (max-width:1123px) {
+    .mleft {
         margin-left: 0px;
     }
-    .brndName{
+    .brndName {
         margin-right: 8px;
     }
-    .nItem{
+    .nItem {
         margin-right: 5px;
     }
- }
- @media screen and (max-width:991px) {
-    .mleft{
+}
+
+@media screen and (max-width:991px) {
+    .mleft {
         margin-left: 0px;
     }
-    .brndName{
+    .brndName {
         margin-right: 30px;
     }
-    .nItem{
+    .nItem {
         margin-right: 20px;
     }
-    
- }
+}
