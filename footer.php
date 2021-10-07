@@ -16,21 +16,51 @@
 
 
     <footer class="footer">
-    <div class="l-footer">
+        <div class="l-footer">
             <h1>
                 <img src="Images/logo.png" class="img-fluid rounded " style="max-width:20%;" alt="">
             </h1>
             <p><b style="color: red;">CarMax</b> is a family company, one that spans the globe and has shared ideals. We value service to each other and the world as much as to our customers.</p>
         </div>
-    
+
         <ul class="r-footer">
             <li>
                 <h2>Follow Us</h2>
                 <ul class="box">
-                    <li><a target="_blank" href=""><i style="color:  #149279;" class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a target="_blank" href=""><i style="color:  #149279;" class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a target="_blank" href=""><i style="color:  #149279;" class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a target="_blank"href=""><i style="color:  #149279;" class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                    <?PHP
+
+                    $con = mysqli_connect('localhost', 'root', '');
+                    mysqli_select_db($con, 'carmax');
+
+                    $query = " SELECT `name`, `class`, `link` FROM `footericon` order by id ASC";
+
+                    $queryfire = mysqli_query($con, $query);
+
+                    $num = mysqli_num_rows($queryfire);
+
+                    if ($num > 0) {
+                        while ($products = mysqli_fetch_array($queryfire)) {
+                    ?>
+
+
+                            <form>
+
+                            <li><a target="_blank" href="<?php echo $products['link']; ?>"><i style="color:  #149279;" class="<?php echo $products['class']; ?>"></i> <?php echo $products['name']; ?></a></li>
+
+                            </form>
+
+
+
+
+                    <?php
+
+                        }
+                    }
+
+                    ?>
+
+
+                  
                 </ul>
             </li>
             <li class="features">
@@ -59,7 +89,7 @@
 
                             </form>
 
-                           
+
 
 
                     <?php
@@ -69,11 +99,11 @@
 
                     ?>
 
-</ul>
-                
+                </ul>
+
             </li>
         </ul>
-      
+
         <div class="b-footer">
 
             <?PHP
@@ -97,22 +127,20 @@
 
                     </form>
 
-        
 
 
-<?php
+
+            <?php
 
                 }
             }
 
 
-?>
+            ?>
 
-        </div>    
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 

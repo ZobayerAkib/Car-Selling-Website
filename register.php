@@ -66,7 +66,7 @@ include 'nav.php';
 				<input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="Password" name="password" value="" required>
 			</div>
 			<div class="input-group d-flex justify-content-center" style="margin-top: 55px;">
-				<button name="submit" class="btn btn-primary btn-lg" style="width: 400px;">Register</button>
+				<button name="submit" class="btn btn-success btn-lg" style="width: 400px;">Register</button>
 			</div>
 			<div class="login" style="margin-top: 20px;font-size:large;font-weight:bold;">
                 <label>Already have an account?</label>

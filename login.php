@@ -49,7 +49,7 @@ include 'nav.php';
 	<div class="container"  style="width: 450px;text-align: center;margin-top:170px;margin-bottom:170px;height:470px;background-color:white;box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);border-radius:5px;">
 	<div class="card">	
 	<form action="" method="POST" class="login-email">
-			<p class="login-text"  style="font-size: 2rem; font-weight: 800;margin-top:20px;margin-bottom:60px;">Login</p>
+			<p class="login-text"  style="font-size: 2rem; font-weight: 800;margin-top:20px;margin-bottom:60px;">Log in</p>
 			<div class="input-group" style="margin-bottom: 45px;">
 			<label style="margin-right: 118px;margin-left:20px;font-size:20px;font-weight:bold;">Email</label>
 				<input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="email" placeholder="Email" name="email" value="" required>
@@ -59,7 +59,7 @@ include 'nav.php';
 				<input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="Password" name="password" value="" required>
 			</div>
 			<div class="input-group d-flex justify-content-center" style="margin-top: 60px;">
-				<button name="submit" class="btn btn-primary btn-lg" style="width: 390px;">Login</button>
+				<button name="submit" class="btn btn-success btn-lg" style="width: 390px;">Login</button>
 			</div>
 			<div class="register" style="margin-top: 30px;font-size:large;font-weight:bold;">
 			<p class="login-register-text">Don't have an account? <br><a href="register.php">Register Here</a></p>

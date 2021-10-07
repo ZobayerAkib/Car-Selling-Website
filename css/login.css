@@ -5,6 +5,26 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.btnn2 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: linear-gradient(45deg, #1abc9c, #149279);
+    color: #130f40;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: .5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btnn2:hover {
+    background: #1e5f52;
+    color: #fff;
+}
+
+
 /* body {
     width: 100%;
     min-height: 100vh;

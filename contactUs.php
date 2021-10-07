@@ -68,16 +68,16 @@ if (isset($_POST['submit'])) {
                 <div class="social-media">
                     <p>Connect with us :</p>
                     <div class="social-icons">
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="#https://www.facebook.com/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="#https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="#https://www.instagram.com/accounts/login/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a target="_blank" href="#">
+                        <a target="_blank" href="#https://www.linkedin.com/login">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>

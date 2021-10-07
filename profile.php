@@ -96,7 +96,7 @@ if (isset($_POST['logout'])) {
                 <input style="border-radius: 5px;font-size:15px;font-weight:bold;" type="password" placeholder="New Password" name="npassword" value="">
             </div>
             <div class="input-group d-flex justify-content-center" style="margin-top: 55px;">
-                <button name="edit" class="btn btn-primary btn-lg btn-block">Edit</button>
+                <button name="edit" class="btn btn-success btn-lg btn-block">Edit</button>
             </div>
 
         </form>

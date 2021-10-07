@@ -20,44 +20,8 @@ include 'nav.php';
 
 
   <section class="home">
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img style="width:100%" src="Images/one.jpg" class="h-80  w-100  img-fluid" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="Images/three.jpg" class=" w-100 h-80 img-fluid" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="Images/two.jpg" class="h-80  w-100  img-fluid" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 style="color:#149279; font-size:30px;">FIND YOUR CAR</h5>
-            <p style="color: white;">Step into confidence.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+        <img src="images/31.jpg" class="img-fluid" alt="...">
+
   </section>
 
 
@@ -65,7 +29,7 @@ include 'nav.php';
     <div class="about-us mt-5">
       <h1 class="title">About Us</h1>
     </div>
-    <div class="row mt-3">
+    <div class="row">
       <div class="col-12 col-md-6  text">
         <h5><b style="color: red;">CarMax</b> is a family company, one that spans the globe and has shared ideals. We
           value service to each other and the world as much as to our customers. Generations have made their memories
